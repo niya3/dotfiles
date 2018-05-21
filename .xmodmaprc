@@ -1,0 +1,5 @@
+! ctrl - en, shift-ctrl - ru
+keycode 37 = ISO_First_Group ISO_Last_Group
+keycode 66 = Control_L
+add Control = Control_L
+clear Lock
