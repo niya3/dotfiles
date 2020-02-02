@@ -1,0 +1,52 @@
+[user]
+	name = nickname
+	email = email@example.com
+[core]
+    editor = vim
+[http]
+	sslVerify = false
+[merge]
+	tool = kdiff3
+[color]
+	ui = false
+[cola]
+	spellcheck = false
+[merge]
+	tool = kdiff3
+[alias]
+    ax = add --chmod=+x
+    b  = !git --no-pager branch
+    ba  = !git --no-pager branch -a
+    ci = commit -v
+    ciam = commit -v --amend
+    ciamno = commit --amend --no-edit
+    ciamnop = !git commit --amend --no-edit && git push --force-with-lease
+    check = diff --check
+    co = checkout
+    cm = ! git checkout master && git pull || git pull
+    cp = cherry-pick
+    cpa = cherry-pick --abort
+    cpc = cherry-pick --continue
+    dc = diff --cached
+    lf   = log --name-only --oneline
+    lg   = log --graph --oneline --decorate
+    lga  = log --graph --oneline --decorate --all
+    lp  = log -p
+    ls = log --pretty=format:'%h %an: %s' --graph --decorate
+    please = push --force-with-lease
+    r  = remote -v
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase -i
+    st = status -s
+    sts = status
+[help]
+	autocorrect = 5
+[push]
+	default = current
+#[pull]
+#	rebase = true
+#[rebase]
+#	autoStash = true
+[submodule]
+	recurse = true

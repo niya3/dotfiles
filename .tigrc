@@ -1,0 +1,12 @@
+bind main <Ctrl-F> !git checkout %(commit)
+bind main <Ctrl-P> !git please
+bind main p !git pull
+bind main u !git rebase -i %(commit)
+
+bind refs <Ctrl-n> !@git co -b "%(prompt Enter branch name: )"
+
+bind status + !git ciam
+bind status <Ctrl-r> !bash -c "echo %(file) >> .gitignore && vim .gitignore"
+bind status a !git commit -v
+
+set tab-size = 4
